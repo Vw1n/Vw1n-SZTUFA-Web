@@ -15,4 +15,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  base: "/Vw1n-SZTUFA-Web/",
+  build: {
+    outDir: "docs"
+  }
 })
