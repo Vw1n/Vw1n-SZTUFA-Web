@@ -8,7 +8,7 @@
 <style scoped>
 .top_nav{
     width: 100%;
-    height: 47%;
+    height: 61px;
 }
 .first_img{
     width: 1800px;
