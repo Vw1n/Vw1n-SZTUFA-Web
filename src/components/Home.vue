@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import Navigation from './Navigation.vue';
+</script>
 <template>
     <div class="home_content">
         <div class="top_nav"></div>
@@ -8,6 +10,9 @@
                 <div class="title-orange">TO SZTUFA</div>
             </div>
             <img src="/public/Home_bg.jpg" alt="背景图片" />
+        </div>
+        <div class="navigation">
+            <Navigation />
         </div>
     </div>
 </template>
