@@ -1,20 +1,24 @@
 <script setup>
+import router from '@/router';  
+
 const base = import.meta.env.BASE_URL;
 const imgPath = '/';
 const naviData = [
-    { id: 0, title: '首页', icon: 'index' },
-    { id: 1, title: '赛事', icon: 'match' },
-    { id: 2, title: '社区', icon: 'community' },
-    { id: 3, title: '活动', icon: 'activity' },
-    { id: 4, title: '校队', icon: 'schoolTeam' },
+    { id: 0, title: '首页', icon: 'index', path:'/' },
+    { id: 1, title: '赛事', icon: 'match', path: '/Match' },
+    { id: 2, title: '社区', icon: 'community',path: '/Community' },
+    { id: 3, title: '活动', icon: 'activity', path: '/Activity' },
+    { id: 4, title: '校队', icon: 'schoolTeam' , path: '/SchoolTeam' },
 ]
 </script>
 
 <template>
     <div class="navigation-content">
         <div class="navigation-item" v-for="item in naviData" :key="item.id">
-            <img :src="`${base}${imgPath}${item.icon}.jpg`" alt="item.title" />
-            <span>{{ item.title }}</span>
+            <router-link :to="item.path" class="navigation-link">
+                <img :src="`${base}${imgPath}${item.icon}.jpg`" alt="item.title" />
+                <span>{{ item.title }}</span>
+            </router-link>
         </div>
     </div>
 </template>
