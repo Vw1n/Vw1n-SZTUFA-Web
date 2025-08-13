@@ -1,9 +1,12 @@
 <script setup>
 import Navigation from './Navigation.vue';
+import TopNav from './TopNav.vue';
 </script>
 <template>
     <div class="home_content">
-        <div class="top_nav"></div>
+        <div class="top_nav">
+            <TopNav />
+        </div>
         <div class="first_img">
             <!-- Logo 容器 -->
             <div class="logo">
@@ -23,7 +26,7 @@ import Navigation from './Navigation.vue';
     </div>
 </template>
 <style scoped>
-.home_content{
+.home_content {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -38,35 +41,45 @@ import Navigation from './Navigation.vue';
 
 .first_img {
     width: 93.75%;
-    height: calc(100vh - 61px); /* 减去导航栏高度 */
+    height: calc(100vh - 61px);
+    /* 减去导航栏高度 */
     margin: 0 auto;
     text-align: center;
     border-radius: 20px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     overflow: hidden;
-    position: relative; /* 父容器设为相对定位，供子元素绝对定位 */
+    position: relative;
+    /* 父容器设为相对定位，供子元素绝对定位 */
 }
 
 /* Logo 样式调整 - 固定为120px×120px */
 .logo {
-    position: absolute; /* 绝对定位 */
-    top: 5%; /* 距离顶部 5% 位置，可根据需求调整 */
-    left: 50%; /* 水平居中基础 */
-    transform: translateX(-50%); /* 水平居中修正 */
-    z-index: 10; /* 确保在背景图上方 */
-    width: 120px; /* 固定宽度 */
-    height: 120px; /* 固定高度 */
+    position: absolute;
+    /* 绝对定位 */
+    top: 5%;
+    /* 距离顶部 5% 位置，可根据需求调整 */
+    left: 50%;
+    /* 水平居中基础 */
+    transform: translateX(-50%);
+    /* 水平居中修正 */
+    z-index: 10;
+    /* 确保在背景图上方 */
+    width: 120px;
+    /* 固定宽度 */
+    height: 120px;
+    /* 固定高度 */
 }
 
 /* Logo 图片样式 - 确保图片在120px×120px内正确显示 */
 .logo img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* 保持图片比例，完整显示在容器内 */
+    object-fit: contain;
+    /* 保持图片比例，完整显示在容器内 */
 }
 
 /* 背景图片样式 */
-.first_img > img {
+.first_img>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -82,10 +95,12 @@ import Navigation from './Navigation.vue';
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    z-index: 10; /* 确保在背景图上方 */
+    z-index: 10;
+    /* 确保在背景图上方 */
 }
 
-.title-white, .title-orange {
+.title-white,
+.title-orange {
     font-family: 'Noto Sans Bengali ExtraCondensed';
     font-weight: 400;
     line-height: 1.2;
@@ -102,7 +117,8 @@ import Navigation from './Navigation.vue';
 }
 
 /* 默认字体大小 - 适用于中等屏幕 */
-.title-white, .title-orange {
+.title-white,
+.title-orange {
     font-size: clamp(5rem, 15vw, 10.625rem);
 }
 
@@ -117,8 +133,10 @@ import Navigation from './Navigation.vue';
     .first_img {
         height: 88%;
     }
+
     .logo {
-        top: 8%; /* 大屏幕可适当提高 Logo 位置 */
+        top: 8%;
+        /* 大屏幕可适当提高 Logo 位置 */
     }
 }
 
@@ -128,9 +146,11 @@ import Navigation from './Navigation.vue';
         width: 96%;
         border-radius: 15px;
     }
+
     .logo {
         top: 6%;
     }
+
     .title {
         width: 90%;
     }
@@ -141,16 +161,20 @@ import Navigation from './Navigation.vue';
     .top_nav {
         height: 50px;
     }
+
     .first_img {
         width: 98%;
         height: calc(100vh - 50px);
         border-radius: 10px;
         box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
     }
+
     .logo {
         top: 5%;
     }
-    .title-white, .title-orange {
+
+    .title-white,
+    .title-orange {
         letter-spacing: normal;
     }
 }
@@ -160,12 +184,14 @@ import Navigation from './Navigation.vue';
     .title {
         width: 95%;
     }
+
     .logo {
         top: 4%;
     }
-    .title-white, .title-orange {
+
+    .title-white,
+    .title-orange {
         font-size: clamp(3rem, 18vw, 7rem);
     }
 }
 </style>
-    
