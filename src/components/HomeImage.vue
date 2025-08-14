@@ -2,7 +2,7 @@
     <div class="first_img">
         <!-- Logo 容器 -->
         <div class="logo">
-            <img src="/public/Home_logo.jpg" alt="SZTUFA Logo" />
+            <img src="/public/Home_logo.png" alt="SZTUFA Logo" />
         </div>
         <!-- 标题容器 -->
         <div class="title">
