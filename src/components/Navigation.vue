@@ -1,6 +1,8 @@
 <script setup>
+import { useRoute } from 'vue-router';
 import router from '@/router';
 
+const route = useRoute();
 const base = import.meta.env.BASE_URL;
 const imgPath = '/';
 const naviData = [
@@ -10,6 +12,15 @@ const naviData = [
     { id: 3, title: '活动', icon: 'activity', path: '/Activity' },
     { id: 4, title: '校队', icon: 'schoolTeam', path: '/SchoolTeam' },
 ]
+if (route.path === '/Match') {
+    naviData[1].active = true;
+} else if (route.path === '/Community') {
+    naviData[2].active = true;
+} else if (route.path === '/Activity') {
+    naviData[3].active = true;
+} else if (route.path === '/SchoolTeam') {
+    naviData[4].active = true;
+}
 </script>
 
 <template>
@@ -29,11 +40,12 @@ const naviData = [
     /* 固定定位核心属性 */
     position: fixed;
     left: 50%;
-    bottom: 24px;
+    bottom: 30px;
     /* 固定高度 */
     height: 90px;
     /* 总宽度 = 剩余项宽度 + 最后一项宽度 */
-    width: 325px;
+    width: 90%;
+    max-width: 500px; /* 最大宽度限制 */
 
     /* 水平居中修正 */
     transform: translateX(-50%);
@@ -51,7 +63,7 @@ const naviData = [
 
 /* 普通导航项样式 - 均分剩余空间 */
 .navigation-item {
-    width: 56.25px;
+    flex: 1; /* 平均分配空间 */
     height: 90px;
     display: flex;
     flex-direction: column;
@@ -64,7 +76,16 @@ const naviData = [
     font-size: 0.88rem;
     font-weight: 400;
     line-height: 1.13rem;
+    transition: all 0.3s ease; /* 添加过渡效果 */
 }
+
+
+/* 选中状态样式 */
+.navigation-item.active:not(.last-item) {
+    color: #ff6520; /* 使用橙色作为选中状态颜色 */
+    background-color: rgba(255, 101, 32, 0.1); /* 轻微背景色 */
+}
+
 
 /* 最后一个item的样式 - 固定尺寸 */
 .navigation-item.last-item {
@@ -88,6 +109,12 @@ const naviData = [
     width: 35px;
     height: 35px;
     margin-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+/* 选中状态的图标 */
+.navigation-item.active img {
+    transform: scale(1.1); /* 选中时图标略微放大 */
 }
 
 /* 链接样式 */
@@ -117,7 +144,6 @@ const naviData = [
 @media (max-width: 375px) {
     .navigation-content {
         width: 90%;
-        max-width: 325px;
     }
 
     .navigation-item.last-item {
@@ -130,8 +156,8 @@ const naviData = [
     }
 
     .navigation-item img {
-        width: 40px;
-        height: 41px;
+        width: 30px;
+        height: 31px;
     }
 }
 </style>
