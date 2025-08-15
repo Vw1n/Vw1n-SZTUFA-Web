@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://localhost:5177/Vw1n-SZTUFA-Web/#/Community -->
+<html lang="" style="--vueuse-safe-area-top: env(safe-area-inset-top, 0px); --vueuse-safe-area-right: env(safe-area-inset-right, 0px); --vueuse-safe-area-bottom: env(safe-area-inset-bottom, 0px); --vueuse-safe-area-left: env(safe-area-inset-left, 0px);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style><script src="chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/assets/main-world.ts-4ed993c7.js" type="module"></script>
+    <script type="module" src="./Vite App_files/virtual_vue-devtools-path_overlay.js"></script>
+    <script type="module" src="./Vite App_files/virtual_vue-inspector-path_load.js"></script>
+
+    <script type="module" src="./Vite App_files/client"></script>
+
+    
+    <link rel="icon" href="http://localhost:5177/Vw1n-SZTUFA-Web/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  <link rel="stylesheet" href="./Vite App_files/devtools-overlay.css"><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/node_modules/vite-plugin-vue-inspector/src/Overlay.vue?vue&amp;type=style&amp;index=0&amp;scoped=31d1379f&amp;lang.css">
+.vue-inspector-container[data-v-31d1379f] {
+  cursor: pointer;
+  position: fixed;
+  text-align: center;
+  z-index: 2147483647;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.vue-inspector-card[data-v-31d1379f] {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 8px;
+  border-radius: 4px;
+  text-align: left;
+  color:#e9e9e9;
+  font-size: 14px;
+  background-color:#42b883;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+.vue-inspector-card .tip[data-v-31d1379f] {
+  font-size: 11px;
+  opacity: 0.7;
+}
+.vue-inspector-banner[data-v-31d1379f] {
+  display: none;
+  position: absolute;
+  margin: 0;
+  width: 260px;
+  text-decoration: none;
+}
+.vue-inspector-container:hover .vue-inspector-banner[data-v-31d1379f] {
+  display: block;
+}
+.vue-inspector-container--disabled:hover .vue-inspector-banner[data-v-31d1379f] {
+  display: none;
+}
+.vue-inspector-floats[data-v-31d1379f] {
+  z-index: 2147483647;
+  position: fixed;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+.vue-inspector-size-indicator[data-v-31d1379f] {
+  z-index: 2147483646;
+  position: fixed;
+  background-color:#42b88325;
+  border: 1px solid #42b88350;
+  border-radius: 5px;
+  pointer-events: none;
+}
+.vue-inspector-animated[data-v-31d1379f] {
+  transition: all 0.1s ease-in;
+}
+@media (prefers-reduced-motion) {
+.vue-inspector-animated[data-v-31d1379f] {
+    transition: none !important;
+}
+}
+</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/assets/reset.css">/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/assets/main.css">/*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme, base, components, utilities;
+@layer theme {
+  :root, :host {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-600: oklch(44.6% 0.03 256.802);
+    --color-gray-700: oklch(37.3% 0.034 259.733);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
+    --color-black: #000;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --radius-2xl: 1rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --blur-md: 12px;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden="until-found"])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .relative {
+    position: relative;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .aspect-square {
+    aspect-ratio: 1 / 1;
+  }
+  .size-full {
+    width: 100%;
+    height: 100%;
+  }
+  .h-0\.5 {
+    height: calc(var(--spacing) * 0.5);
+  }
+  .h-4\/5 {
+    height: calc(4/5 * 100%);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-\[58px\] {
+    height: 58px;
+  }
+  .h-max {
+    height: max-content;
+  }
+  .w-0\.5 {
+    width: calc(var(--spacing) * 0.5);
+  }
+  .w-4\/5 {
+    width: calc(4/5 * 100%);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-\[58px\] {
+    width: 58px;
+  }
+  .w-max {
+    width: max-content;
+  }
+  .w-px {
+    width: 1px;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-gray-100 {
+    border-color: var(--color-gray-100);
+  }
+  .bg-black\/90 {
+    background-color: color-mix(in srgb, #000 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 90%, transparent);
+    }
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
+  .bg-secondary {
+    background-color: var(--secondary);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  .backdrop-blur-md {
+    --tw-backdrop-blur: blur(var(--blur-md));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .ease-out {
+    --tw-ease: var(--ease-out);
+    transition-timing-function: var(--ease-out);
+  }
+  .supports-backdrop-blur\:bg-white\/10 {
+    @supports (backdrop-blur: var(--tw)) {
+      background-color: color-mix(in srgb, #fff 10%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+      }
+    }
+  }
+  .dark\:border-gray-700 {
+    &:is(.dark *) {
+      border-color: var(--color-gray-700);
+    }
+  }
+  .dark\:bg-black {
+    &:is(.dark *) {
+      background-color: var(--color-black);
+    }
+  }
+  .dark\:bg-gray-600 {
+    &:is(.dark *) {
+      background-color: var(--color-gray-600);
+    }
+  }
+  .dark\:bg-gray-800 {
+    &:is(.dark *) {
+      background-color: var(--color-gray-800);
+    }
+  }
+  .dark\:text-gray-200 {
+    &:is(.dark *) {
+      color: var(--color-gray-200);
+    }
+  }
+  .supports-backdrop-blur\:dark\:bg-black\/10 {
+    @supports (backdrop-blur: var(--tw)) {
+      &:is(.dark *) {
+        background-color: color-mix(in srgb, #000 10%, transparent);
+        @supports (color: color-mix(in lab, red, red)) {
+          background-color: color-mix(in oklab, var(--color-black) 10%, transparent);
+        }
+      }
+    }
+  }
+}
+@property --tw-animation-delay {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0s;
+}
+@property --tw-animation-direction {
+  syntax: "*";
+  inherits: false;
+  initial-value: normal;
+}
+@property --tw-animation-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-animation-fill-mode {
+  syntax: "*";
+  inherits: false;
+  initial-value: none;
+}
+@property --tw-animation-iteration-count {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-enter-opacity {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-enter-rotate {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-enter-scale {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-enter-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-enter-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-exit-opacity {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-exit-rotate {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-exit-scale {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-exit-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-exit-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+:root {
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.141 0.005 285.823);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(0.21 0.006 285.885);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.967 0.001 286.375);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --muted: oklch(0.967 0.001 286.375);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --accent: oklch(0.967 0.001 286.375);
+  --accent-foreground: oklch(0.21 0.006 285.885);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.92 0.004 286.32);
+  --input: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.705 0.015 286.067);
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.141 0.005 285.823);
+}
+.dark {
+  --background: oklch(0.141 0.005 285.823);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.141 0.005 285.823);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.141 0.005 285.823);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.21 0.006 285.885);
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.274 0.006 286.033);
+  --muted-foreground: oklch(0.705 0.015 286.067);
+  --accent: oklch(0.274 0.006 286.033);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.274 0.006 286.033);
+  --input: oklch(0.274 0.006 286.033);
+  --ring: oklch(0.442 0.017 285.786);
+}
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: var(--ring);
+    @supports (color: color-mix(in lab, red, red)) {
+      outline-color: color-mix(in oklab, var(--ring) 50%, transparent);
+    }
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
+html {
+  color-scheme: light dark;
+}
+html.dark {
+  color-scheme: dark;
+}
+html.light {
+  color-scheme: light;
+}
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-backdrop-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ease {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
+      --tw-border-style: solid;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
+      --tw-backdrop-blur: initial;
+      --tw-backdrop-brightness: initial;
+      --tw-backdrop-contrast: initial;
+      --tw-backdrop-grayscale: initial;
+      --tw-backdrop-hue-rotate: initial;
+      --tw-backdrop-invert: initial;
+      --tw-backdrop-opacity: initial;
+      --tw-backdrop-saturate: initial;
+      --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
+      --tw-ease: initial;
+      --tw-animation-delay: 0s;
+      --tw-animation-direction: normal;
+      --tw-animation-duration: initial;
+      --tw-animation-fill-mode: none;
+      --tw-animation-iteration-count: 1;
+      --tw-enter-opacity: 1;
+      --tw-enter-rotate: 0;
+      --tw-enter-scale: 1;
+      --tw-enter-translate-x: 0;
+      --tw-enter-translate-y: 0;
+      --tw-exit-opacity: 1;
+      --tw-exit-rotate: 0;
+      --tw-exit-scale: 1;
+      --tw-exit-translate-x: 0;
+      --tw-exit-translate-y: 0;
+    }
+  }
+}
+</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/App.vue?vue&amp;type=style&amp;index=0&amp;lang.css">
+#bg {
+  /* 固定定位使元素充满整个屏幕 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* 确保元素在最底层 */
+  z-index: -1;
+  /* 充满整个屏幕 */
+  width: 100vw;
+  height: 100vh;
+  /* 背景图片设置 */
+  background-image: url('/Vw1n-SZTUFA-Web/App_bg.jpg');
+  background-size: cover;
+  /* 保持比例并覆盖整个元素 */
+  background-position: center;
+  /* 图片居中显示 */
+  background-repeat: no-repeat;
+  /* 不重复平铺 */
+}
+</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/components/Navigation.vue?vue&amp;type=style&amp;index=0&amp;scoped=578fcad0&amp;lang.css">
+.navigation-content[data-v-578fcad0] {
+    /* 固定定位核心属性 */
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    /* 固定高度 */
+    height: 90px;
+    /* 总宽度 = 剩余项宽度 + 最后一项宽度 */
+    width: 325px;
+
+    /* 水平居中修正 */
+    transform: translateX(-50%);
+
+    /* 导航栏样式优化 */
+    display: flex;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    overflow: hidden;
+    /* 确保最后一项的圆角不溢出 */
+}
+
+/* 普通导航项样式 - 均分剩余空间 */
+.navigation-item[data-v-578fcad0] {
+    width: 56.25px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /* 字体样式 */
+    color: rgba(78, 99, 142, 1);
+    font-family: ZiZhiQuXiMaiTi;
+    font-size: 0.88rem;
+    font-weight: 400;
+    line-height: 1.13rem;
+}
+
+/* 最后一个item的样式 - 固定尺寸 */
+.navigation-item.last-item[data-v-578fcad0] {
+    width: 100px;
+    height: 90px;
+    flex: none;
+    /* 取消flex分配，使用固定尺寸 */
+    background-color: rgba(255, 101, 32, 1);
+    /* 右侧圆角 */
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* 最后一个item的字体颜色 */
+.navigation-item.last-item .navigation-link[data-v-578fcad0] {
+    color: white;
+}
+
+/* 图标样式 */
+.navigation-item img[data-v-578fcad0] {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 4px;
+}
+
+/* 链接样式 */
+.navigation-link[data-v-578fcad0] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 悬停效果 */
+/* .navigation-item:not(.last-item):hover {
+    color: #1677ff;
+} */
+@font-face {
+    font-family: 'ZiZhiQuXiMaiTi';
+    src: url('/Vw1n-SZTUFA-Web/src/assets/ZiZhiQuXiMaiTi.ttf');
+    font-display: swap;
+}
+
+/* 响应式适配 */
+@media (max-width: 375px) {
+.navigation-content[data-v-578fcad0] {
+        width: 90%;
+        max-width: 325px;
+}
+.navigation-item.last-item[data-v-578fcad0] {
+        width: 80px;
+}
+.navigation-item[data-v-578fcad0] {
+        font-size: 12px;
+        line-height: 16px;
+}
+.navigation-item img[data-v-578fcad0] {
+        width: 40px;
+        height: 41px;
+}
+}
+</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/components/TopNav.vue?vue&amp;type=style&amp;index=0&amp;scoped=274c4e5f&amp;lang.css">
+.top_nav[data-v-274c4e5f] {
+    width: 100%;
+    height: 61px;
+    /* 可以添加导航栏背景色以便在各种背景下可见 */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.navigation-content[data-v-274c4e5f] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 61px;
+    font-family: 'YouSheBiaoTiHei';
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.63rem;
+    letter-spacing: 0rem;
+    color: rgba(255, 255, 255, 1);
+}
+@font-face {
+    font-family: 'YouSheBiaoTiHei';
+    src: url('/Vw1n-SZTUFA-Web/src/assets/YouSheBiaoTiHei.ttf');
+    font-display: swap;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/components/HomeImage.vue?vue&amp;type=style&amp;index=0&amp;scoped=f3c989b6&amp;lang.css">
+.first_img[data-v-f3c989b6] {
+    width: 93.75%;
+    height: calc(100vh - 61px);
+    /* 减去导航栏高度 */
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    position: relative;
+    /* 父容器设为相对定位，供子元素绝对定位 */
+}
+
+/* Logo 样式调整 - 固定为120px×120px */
+.logo[data-v-f3c989b6] {
+    position: absolute;
+    /* 绝对定位 */
+    top: 5%;
+    /* 距离顶部 5% 位置，可根据需求调整 */
+    left: 50%;
+    /* 水平居中基础 */
+    transform: translateX(-50%);
+    /* 水平居中修正 */
+    z-index: 10;
+    /* 确保在背景图上方 */
+    width: 120px;
+    /* 固定宽度 */
+    height: 120px;
+    /* 固定高度 */
+}
+
+/* Logo 图片样式 - 确保图片在120px×120px内正确显示 */
+.logo img[data-v-f3c989b6] {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* 保持图片比例，完整显示在容器内 */
+}
+
+/* 背景图片样式 */
+.first_img>img[data-v-f3c989b6] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+}
+.title[data-v-f3c989b6] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    /* 确保在背景图上方 */
+}
+.title-white[data-v-f3c989b6],
+.title-orange[data-v-f3c989b6] {
+    font-family: 'Noto Sans Bengali ExtraCondensed';
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+}
+.title-white[data-v-f3c989b6] {
+    color: rgba(255, 255, 255, 1);
+}
+.title-orange[data-v-f3c989b6] {
+    color: rgba(255, 101, 32, 1);
+    letter-spacing: -2px;
+}
+
+/* 默认字体大小 - 适用于中等屏幕 */
+.title-white[data-v-f3c989b6],
+.title-orange[data-v-f3c989b6] {
+    font-size: clamp(5rem, 15vw, 10.625rem);
+}
+@font-face {
+    font-family: 'Noto Sans Bengali ExtraCondensed';
+    src: url('/Vw1n-SZTUFA-Web/src/assets/NSBE.ttf');
+    font-display: swap;
+}
+
+/* 大屏幕设备 */
+@media (min-width: 1200px) {
+.first_img[data-v-f3c989b6] {
+        height: 88%;
+}
+.logo[data-v-f3c989b6] {
+        top: 8%;
+        /* 大屏幕可适当提高 Logo 位置 */
+}
+}
+
+/* 平板设备 */
+@media (max-width: 992px) {
+.first_img[data-v-f3c989b6] {
+        width: 96%;
+        border-radius: 15px;
+}
+.logo[data-v-f3c989b6] {
+        top: 6%;
+}
+.title[data-v-f3c989b6] {
+        width: 90%;
+}
+}
+
+/* 手机设备 */
+@media (max-width: 768px) {
+.top_nav[data-v-f3c989b6] {
+        height: 50px;
+}
+.first_img[data-v-f3c989b6] {
+        width: 98%;
+        height: calc(100vh - 50px);
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.logo[data-v-f3c989b6] {
+        top: 5%;
+}
+.title-white[data-v-f3c989b6],
+    .title-orange[data-v-f3c989b6] {
+        letter-spacing: normal;
+}
+}
+
+/* 小屏手机 */
+@media (max-width: 576px) {
+.title[data-v-f3c989b6] {
+        width: 95%;
+}
+.logo[data-v-f3c989b6] {
+        top: 4%;
+}
+.title-white[data-v-f3c989b6],
+    .title-orange[data-v-f3c989b6] {
+        font-size: clamp(3rem, 18vw, 7rem);
+}
+}
+</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/components/ImageScroll.vue?vue&amp;type=style&amp;index=0&amp;scoped=eb2b8632&amp;lang.css">
+.image-scroll-container[data-v-eb2b8632] {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.image-track[data-v-eb2b8632] {
+  display: flex;
+  height: 100%;
+  will-change: transform;
+}
+.image-item[data-v-eb2b8632] {
+  width: var(--eb2b8632-imageWidth\ \+\ \'px\');
+  flex-shrink: 0;
+  padding: 0 8px;
+  cursor: pointer;
+}
+.scroll-image[data-v-eb2b8632] {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.scroll-image[data-v-eb2b8632]:hover {
+  transform: scale(1.03);
+}
+.nav-btn[data-v-eb2b8632] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.nav-btn[data-v-eb2b8632]:hover {
+  background-color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+.prev-btn[data-v-eb2b8632] {
+  left: 10px;
+}
+.next-btn[data-v-eb2b8632] {
+  right: 10px;
+}
+.indicators[data-v-eb2b8632] {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.indicator[data-v-eb2b8632] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.indicator.active[data-v-eb2b8632] {
+  background-color: #42b983; /* Vue品牌绿色 */
+  transform: scale(1.2);
+}
+</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/components/HomeArticle.vue?vue&amp;type=style&amp;index=0&amp;scoped=2965e736&amp;lang.css">
+.second_screen_content[data-v-2965e736] {
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.white_block[data-v-2965e736] {
+    margin: 0 auto;
+    margin-top: clamp(50px, 20vh, 134px); /* 使用clamp实现动态margin */
+    width: 90%;
+    max-width: 1200px; /* 最大宽度限制 */
+    min-height: 500px;
+    height: clamp(500px, 80vh, 812px); /* 动态高度 */
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1);
+    overflow: visible;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* 增加轻微阴影提升质感 */
+}
+.title[data-v-2965e736] {
+    position: absolute;
+    width: 620px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'YouSheBiaoTiHei';
+    color: rgba(78, 99, 142, 1);
+    font-size: clamp(2rem, 15vw, 10.625rem); /* 响应式字体大小 */
+    font-weight: 400;
+    line-height: 1.2; /* 使用相对行高 */
+    letter-spacing: -2px;
+    text-align: center; /* 居中对齐更适合响应式 */
+}
+.imageScroll[data-v-2965e736] {
+    position: absolute;
+    top: clamp(120px, 30vh, 200px); /* 动态定位 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* 占容器宽度的90% */
+}
+@font-face {
+    font-family: 'YouSheBiaoTiHei';
+    src: url('/Vw1n-SZTUFA-Web/src/assets/YouSheBiaoTiHei.ttf'); /* 修复路径错误 */
+    font-display: swap;
+}
+
+/* 媒体查询适配不同屏幕尺寸 */
+@media (max-width: 1200px) {
+.white_block[data-v-2965e736] {
+        width: 95%;
+}
+}
+@media (max-width: 768px) {
+.white_block[data-v-2965e736] {
+        height: clamp(400px, 70vh, 600px);
+        margin-top: 30px;
+}
+.title[data-v-2965e736] {
+        letter-spacing: -1px;
+}
+.imageScroll[data-v-2965e736] {
+        top: clamp(100px, 25vh, 150px);
+}
+}
+@media (max-width: 480px) {
+.second_screen_content[data-v-2965e736] {
+        padding: 0 10px;
+}
+.white_block[data-v-2965e736] {
+        border-radius: 12px;
+        height: clamp(350px, 60vh, 500px);
+}
+.title[data-v-2965e736] {
+        top: 5px;
+        letter-spacing: 0;
+}
+}
+</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/components/Home.vue?vue&amp;type=style&amp;index=0&amp;scoped=08e32229&amp;lang.css">
+.first_screen[data-v-08e32229] {
+    width: 100%;
+    height: 100vh;
+}
+.second_screen[data-v-08e32229] {
+    width: 100%;
+    height: 100vh;
+}
+</style><style type="text/css" data-vite-dev-id="/Users/wayne/Documents/Code/SZTUFA-Web/src/components/Community.vue?vue&amp;type=style&amp;index=0&amp;scoped=d0797c8b&amp;lang.css">
+/* 如需额外样式，可在此处添加 */
+.main[data-v-d0797c8b] {
+  margin: 0 auto;
+}
+</style></head>
+  <body>
+    <div id="app" data-v-app=""><div id="bg"></div><div data-v-d0797c8b="" class="main"><!-- 使用Tailwind白色背景类及配套样式 --><div data-v-d0797c8b="" class="supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 mx-auto mt-8 h-[58px] w-max p-2 backdrop-blur-md transition-all mb-6 bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-100 flex gap-4 items-center"><div data-v-d0797c8b="" class="flex aspect-square cursor-pointer items-center justify-center rounded-full transition-all duration-200 ease-out" hovered="[object Object]" style="width: 40px; height: 40px;"><!-- 图标使用深灰色与白色背景对比 --><svg data-v-d0797c8b="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi w-6 h-6 text-gray-800"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg></div><div data-v-d0797c8b="" class="relative block bg-secondary h-4/5 w-0.5 bg-gray-200 w-px h-6"></div><div data-v-d0797c8b="" class="flex aspect-square cursor-pointer items-center justify-center rounded-full transition-all duration-200 ease-out" hovered="[object Object]" style="width: 40px; height: 40px;"><svg data-v-d0797c8b="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1.12em" height="1em" viewBox="0 0 256 229" class="iconify iconify--logos w-6 h-6 text-gray-800"><path fill="#0066DA" d="m19.354 196.034l11.29 19.5c2.346 4.106 5.718 7.332 9.677 9.678q17.009-21.591 23.68-33.137q6.77-11.717 16.641-36.655q-26.604-3.502-40.32-3.502q-13.165 0-40.322 3.502c0 4.545 1.173 9.09 3.519 13.196z"></path><path fill="#EA4335" d="M215.681 225.212c3.96-2.346 7.332-5.572 9.677-9.677l4.692-8.064l22.434-38.855a26.57 26.57 0 0 0 3.518-13.196q-27.315-3.502-40.247-3.502q-13.899 0-40.248 3.502q9.754 25.075 16.422 36.655q6.724 11.683 23.752 33.137"></path><path fill="#00832D" d="M128.001 73.311q19.68-23.768 27.125-36.655q5.996-10.377 13.196-33.137C164.363 1.173 159.818 0 155.126 0h-54.25C96.184 0 91.64 1.32 87.68 3.519q9.16 26.103 15.544 37.154q7.056 12.213 24.777 32.638"></path><path fill="#2684FC" d="M175.36 155.42H80.642l-40.32 69.792c3.958 2.346 8.503 3.519 13.195 3.519h148.968c4.692 0 9.238-1.32 13.196-3.52z"></path><path fill="#00AC47" d="M128.001 73.311L87.681 3.52c-3.96 2.346-7.332 5.571-9.678 9.677L3.519 142.224A26.57 26.57 0 0 0 0 155.42h80.642z"></path><path fill="#FFBA00" d="m215.242 77.71l-37.243-64.514c-2.345-4.106-5.718-7.331-9.677-9.677l-40.32 69.792l47.358 82.109h80.496c0-4.546-1.173-9.09-3.519-13.196z"></path></svg></div><div data-v-d0797c8b="" class="flex aspect-square cursor-pointer items-center justify-center rounded-full transition-all duration-200 ease-out" hovered="[object Object]" style="width: 40px; height: 40px;"><svg data-v-d0797c8b="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="0.96em" height="1em" viewBox="0 0 256 268" class="iconify iconify--logos w-6 h-6 text-gray-800"><path fill="#FFF" d="M16.092 11.538L164.09.608c18.179-1.56 22.85-.508 34.28 7.801l47.243 33.282C253.406 47.414 256 48.975 256 55.207v182.527c0 11.439-4.155 18.205-18.696 19.24L65.44 267.378c-10.913.517-16.11-1.043-21.825-8.327L8.826 213.814C2.586 205.487 0 199.254 0 191.97V29.726c0-9.352 4.155-17.153 16.092-18.188"></path><path d="M164.09.608L16.092 11.538C4.155 12.573 0 20.374 0 29.726v162.245c0 7.284 2.585 13.516 8.826 21.843l34.789 45.237c5.715 7.284 10.912 8.844 21.825 8.327l171.864-10.404c14.532-1.035 18.696-7.801 18.696-19.24V55.207c0-5.911-2.336-7.614-9.21-12.66l-1.185-.856L198.37 8.409C186.94.1 182.27-.952 164.09.608M69.327 52.22c-14.033.945-17.216 1.159-25.186-5.323L23.876 30.778c-2.06-2.086-1.026-4.69 4.163-5.207l142.274-10.395c11.947-1.043 18.17 3.12 22.842 6.758l24.401 17.68c1.043.525 3.638 3.637.517 3.637L71.146 52.095zm-16.36 183.954V81.222c0-6.767 2.077-9.887 8.3-10.413L230.02 60.93c5.724-.517 8.31 3.12 8.31 9.879v153.917c0 6.767-1.044 12.49-10.387 13.008l-161.487 9.361c-9.343.517-13.489-2.594-13.489-10.921M212.377 89.53c1.034 4.681 0 9.362-4.681 9.897l-7.783 1.542v114.404c-6.758 3.637-12.981 5.715-18.18 5.715c-8.308 0-10.386-2.604-16.609-10.396l-50.898-80.079v77.476l16.1 3.646s0 9.362-12.989 9.362l-35.814 2.077c-1.043-2.086 0-7.284 3.63-8.318l9.351-2.595V109.823l-12.98-1.052c-1.044-4.68 1.55-11.439 8.826-11.965l38.426-2.585l52.958 81.113v-71.76l-13.498-1.552c-1.043-5.733 3.111-9.896 8.3-10.404z"></path></svg></div><div data-v-d0797c8b="" class="flex aspect-square cursor-pointer items-center justify-center rounded-full transition-all duration-200 ease-out" hovered="[object Object]" style="width: 40px; height: 40px;"><svg data-v-d0797c8b="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" viewBox="0 0 256 258" class="iconify iconify--logos w-6 h-6 text-gray-800"><defs><lineargradient id="iconifyVue14" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#1FAF38"></stop><stop offset="100%" stop-color="#60D669"></stop></lineargradient><lineargradient id="iconifyVue15" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#F9F9F9"></stop><stop offset="100%" stop-color="#FFF"></stop></lineargradient></defs><path fill="url(#iconifyVue14)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"></path><path fill="url(#iconifyVue15)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"></path><path fill="#FFF" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"></path></svg></div></div></div></div>
+    <script type="module" src="./Vite App_files/main.js"></script>
+  
+
+<script src="./Vite App_files/devtools-overlay.mjs" type="module"></script><div id="__vue-devtools-container__" data-v-inspector-ignore="true" data-v-app=""><div data-v-640ec535="" class="vue-devtools__anchor vue-devtools__anchor--hide" style="left: 956px; top: 849px; --vue-devtools-widget-bg: #ffffff; --vue-devtools-widget-fg: #111; --vue-devtools-widget-border: #efefef; --vue-devtools-widget-shadow: rgba(128,128,128,0.1);"><div data-v-640ec535="" class="vue-devtools__anchor--glowing" style=""></div><div data-v-640ec535="" class="vue-devtools__panel" style="transform: translate(-50%, calc(-50% + 15px)); border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"><div data-v-640ec535="" class="vue-devtools__anchor-btn panel-entry-btn" title="Toggle Vue DevTools" aria-label="Toggle devtools panel" style="filter: saturate(0);"><svg data-v-640ec535="" viewBox="0 0 256 198" fill="none" xmlns="http://www.w3.org/2000/svg"><path data-v-640ec535="" fill="#41B883" d="M204.8 0H256L128 220.8L0 0h97.92L128 51.2L157.44 0h47.36Z"></path><path data-v-640ec535="" fill="#41B883" d="m0 0l128 220.8L256 0h-51.2L128 132.48L50.56 0H0Z"></path><path data-v-640ec535="" fill="#35495E" d="M50.56 0L128 133.12L204.8 0h-47.36L128 51.2L97.92 0H50.56Z"></path></svg></div><div data-v-640ec535="" class="vue-devtools__panel-content vue-devtools__panel-divider"></div><div data-v-640ec535="" class="vue-devtools__anchor-btn vue-devtools__panel-content vue-devtools__inspector-button active" title="Toggle Component Inspector"><svg data-v-640ec535="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height: 1.1em; width: 1.1em; opacity: 1; color: rgb(0, 220, 130);"><g data-v-640ec535="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle data-v-640ec535="" cx="12" cy="12" r=".5" fill="currentColor"></circle><path data-v-640ec535="" d="M5 12a7 7 0 1 0 14 0a7 7 0 1 0-14 0m7-9v2m-9 7h2m7 7v2m7-9h2"></path></g></svg></div></div><div data-v-399f5059="" data-v-640ec535="" class="vue-devtools-frame" style="z-index: -1; pointer-events: auto; width: min(80vw, -48px + 100vw); height: min(60vh, -48px + 100vh); left: 0px; transform: translate(-50%, 0px); bottom: 0px; display: none;"><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize--horizontal" style="top: 0px;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize--horizontal" style="bottom: 0px; display: none;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize--vertical" style="left: 0px;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize--vertical" style="right: 0px;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize-corner" style="top: 0px; left: 0px; cursor: nwse-resize;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize-corner" style="top: 0px; right: 0px; cursor: nesw-resize;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize-corner" style="bottom: 0px; left: 0px; cursor: nesw-resize; display: none;"></div><div data-v-399f5059="" class="vue-devtools-resize vue-devtools-resize-corner" style="bottom: 0px; right: 0px; cursor: nwse-resize; display: none;"></div></div></div></div><div id="vue-inspector-container" data-v-app=""><div data-v-31d1379f="" data-v-inspector-ignore="true"><!--v-if--><!-- Overlay --><!--v-if--></div></div><yd-mg-icon style="position: fixed; z-index: 2147483647;"><template shadowrootmode="open"><style>
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.all {
+    direction: ltr;
+}
+.all > * {
+    direction: rtl;
+}
+.hidden {
+    display: none;
+    transition: width 0.3s linear;
+}
+.container:hover .hidden {
+    width: var(--131b0bc3);
+    height: var(--367772ca);
+    display: flex;
+}
+.container {
+    position: fixed;
+    top:var(--8b7ed71a);
+    right:var(--2c4e45ba);
+    width: var(--b2ad46e2);
+    height: var(--14b33b7e);
+    background-color: #fff;
+    border-radius: var(--e55f886a);
+    box-shadow: 0 0 10px #b3b5b8;
+    transition: width 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container:hover {
+    width: var(--301156d1);
+    border-radius: var(--e55f886a);
+    justify-content: space-around;
+}
+.icon {
+    width: var(--131b0bc3);
+    height: var(--367772ca);
+    cursor: pointer;
+    user-select: none;
+}
+.icon:hover {
+}
+.yd-translate-loader {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    height: var(--367772ca);
+    width:  var(--131b0bc3);
+    animation: spin 0.5s linear infinite;
+}
+@keyframes spin {
+0% { transform: rotate(0deg);
+}
+100% { transform: rotate(360deg);
+}
+}
+@keyframes append-animate {
+from {
+        opacity: 0;
+}
+to {
+        opacity: 1;
+}
+}
+.popup {
+  animation: popup 0.3s forwards;
+}
+@keyframes popup {
+0% {
+    opacity: 0;
+    transform: scale(0);
+}
+100% {
+    opacity: 1;
+    transform: scale(1);
+}
+}
+</style><div class="all" style="position: fixed; z-index: 2147483647; --131b0bc3: 22px; --367772ca: 22px; --8b7ed71a: 0px; --2c4e45ba: 0px; --b2ad46e2: 26px; --14b33b7e: 26px; --e55f886a: 13px; --301156d1: 78px;"><!----></div></template></yd-mg-icon><yd-mg-block-icon><template shadowrootmode="open"><style>@charset "UTF-8";
+.disabled-element[data-v-d3135d60] {
+  cursor: not-allowed;
+}
+.all[data-v-d3135d60] {
+  position: absolute;
+  z-index: 1;
+}
+.all .container[data-v-d3135d60] {
+  width: var(--5a3ced10);
+  height: var(--58dc89c6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all .container .yd-line[data-v-d3135d60] {
+  display: block;
+  position: absolute;
+  height: var(--c03ec7f0);
+  top: var(--7808ebd8);
+  left: var(--891c21b0);
+}
+.all .container .yd-line .orignal[data-v-d3135d60] {
+  padding: 1px;
+  background-color: #E4E7F3;
+  height: var(--5934d8d6);
+}
+.all .container .yd-line .yd[data-v-d3135d60] {
+  padding: 1px;
+  background-color: #FF939E;
+  height: var(--4d327ada);
+}
+.all .container .yd-line .llm[data-v-d3135d60] {
+  padding: 1px;
+  background-color: #2485FF;
+  height: var(--18678bd3);
+}
+.all .container .tooltip-container[data-v-d3135d60] {
+  display: inline-block;
+  position: absolute;
+  top: var(--147b79a2);
+  left: var(--7afb4d26);
+}
+.all .container .tooltip-container .icon[data-v-d3135d60] {
+  width: var(--5a3ced10);
+  height: var(--58dc89c6);
+  background-image: var(--4a440a69);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.all .container .tooltip-container .icon[data-v-d3135d60]::before {
+  content: var(--4809e853);
+  display: none;
+}
+.all .container .tooltip-container .icon[data-v-d3135d60]:hover {
+  box-shadow: 0px 4px 10px rgba(56, 112, 200, 0.16);
+  transition: width 0.3s linear;
+  background-image: var(--4809e853);
+  cursor: pointer;
+}
+.all .container .tooltip-container .llmIcon[data-v-d3135d60] {
+  width: var(--5a3ced10);
+  height: var(--58dc89c6);
+  background-image: var(--4a440a69);
+  border-radius: 5px;
+}
+.all .container .tooltip-container .llmIcon[data-v-d3135d60]:hover {
+  width: var(--5a3ced10);
+  height: 48px;
+  background-image: var(--11da4116);
+  border-radius: 5px;
+}
+.all .container .tooltip-container .tooltip[data-v-d3135d60] {
+  position: absolute;
+  top: var(--523390c5);
+  /* 放在元素的上方 */
+  left: var(--178a82d2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #F9FBFF;
+  padding: 8px;
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(216, 217, 219, 0.5);
+  box-shadow: 0px 1.2px 3.6px 0px rgba(0, 0, 0, 0.1), 0px 2px 20px 0px rgba(27, 19, 98, 0.08);
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0em;
+  user-select: none;
+  color: #2A2B2E;
+}
+.all .container .tooltip-container .llmTooltip[data-v-d3135d60] {
+  position: absolute;
+  top: var(--523390c5);
+  /* 放在元素的上方 */
+  left: var(--178a82d2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #F9FBFF;
+  padding: 8px;
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(216, 217, 219, 0.5);
+  box-shadow: 0px 1.2px 3.6px 0px rgba(0, 0, 0, 0.1), 0px 2px 20px 0px rgba(27, 19, 98, 0.08);
+  font-family: PingFang SC;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0em;
+  user-select: none;
+  color: #2A2B2E;
+}
+.all .container .yd-translate-loader-block[data-v-d3135d60] {
+  position: absolute;
+  top: var(--147b79a2);
+  left: var(--7afb4d26);
+  width: var(--5a3ced10);
+  height: var(--5a3ced10);
+  background-image: var(--3fa19693);
+  /* 确保这里是正确的图片路径 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 4px 10px rgba(56, 112, 200, 0.16);
+  overflow: hidden;
+  /* 保持子元素的圆角效果 */
+}
+.all .container .yd-translate-loader-block[data-v-d3135d60]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background: linear-gradient(to left bottom, rgba(38, 132, 255, 0.6), rgba(120, 85, 250, 0.6));
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.all .container .tip[data-v-d3135d60] {
+  background-color: #F9FBFF;
+  padding: 8px;
+  border-radius: 8px;
+  height: 400px;
+  border: 1px solid #D8D9DB;
+}</style><div data-v-d3135d60="" class="all notranslate" style="--5a3ced10: 24px; --58dc89c6: 24px; --c03ec7f0: 0px; --7808ebd8: 0px; --891c21b0: 0px; --5934d8d6: 0px; --4d327ada: 0px; --18678bd3: 0px; --147b79a2: -16px; --7afb4d26: -44px; --4a440a69: url(chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/block.svg); --4809e853: url(chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/block-h.svg); --11da4116: url(chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/block-h-llm.svg); --523390c5: undefined; --178a82d2: undefined; --3fa19693: url(chrome-extension://memhacajcfhmibggbgilihlmiiddeggo/block-l.gif);"><!----></div></template></yd-mg-block-icon><yd-image-ocr style="z-index: 2147483647;"><template shadowrootmode="open"><style>@charset "UTF-8";
+.modal-overlay[data-v-04ce0a75] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content[data-v-04ce0a75] {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  width: 800px;
+  height: 500px;
+  flex-direction: column;
+  position: relative;
+}
+.modal-header[data-v-04ce0a75] {
+  display: flex;
+  justify-content: flex-end;
+  height: 24px;
+}
+.modal-body[data-v-04ce0a75] {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+}
+.modal-body .imageContainer[data-v-04ce0a75] {
+  flex: 2;
+  justify-content: center;
+}
+.modal-body .img[data-v-04ce0a75] {
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+.modal-body .img .box[data-v-04ce0a75] {
+  position: absolute;
+  border: #333 3px solid;
+}
+.modal-body .text-content[data-v-04ce0a75] {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* 根据需要调整文本内容的样式 */
+}
+.modal-body .text-content .text[data-v-04ce0a75] {
+  overflow-y: auto;
+  height: 450px;
+}
+.modal-body .text-content .toolbar[data-v-04ce0a75] {
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.close-button[data-v-04ce0a75] {
+  background-color: transparent;
+  /* 透明背景 */
+  border: none;
+  /* 去除边框 */
+  cursor: pointer;
+  /* 鼠标悬停时显示指针 */
+  outline: none;
+  /* 去除焦点轮廓 */
+  position: absolute;
+  /* 绝对定位 */
+  top: 10px;
+  /* 距顶部的距离 */
+  right: 10px;
+  /* 距右边的距离 */
+  font-size: 24px;
+  /* 字体大小 */
+  line-height: 24px;
+  /* 行高，以确保垂直居中 */
+  color: #333;
+  /* 字体颜色 */
+  font-weight: bold;
+  /* 字体加粗 */
+}
+.close-button[data-v-04ce0a75]:hover {
+  color: #666;
+  /* 鼠标悬停时的颜色变化 */
+}
+.line[data-v-04ce0a75], .redline[data-v-04ce0a75] {
+  font-family: Arial, Helvetica, sans-serif;
+  /* 使用无衬线字体 */
+  font-size: 16px;
+  /* 设置合适的字体大小 */
+  line-height: 24px;
+  color: #333;
+  /* 文字颜色 */
+  padding: 3px 3px 3px 6px;
+  /* 内边距 */
+  margin-top: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-left-color 0.3s;
+  /* 背景色和边框颜色变化的过渡效果 */
+  border-left: 3px solid #ddd;
+  /* 设置灰色的左边框 */
+}
+.redline[data-v-04ce0a75] {
+  border-left-color: #e53935;
+  /* 鼠标悬停时边框颜色变为红色 */
+  background-color: #f5f5f5;
+}
+.button[data-v-04ce0a75] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #FB4A3E;
+  /* 一个明亮但不饱和的红色 */
+  color: white;
+  /* 文本颜色为白色 */
+  padding: 5px 10px;
+  /* 按钮内边距 */
+  border: none;
+  /* 无边框 */
+  border-radius: 5px;
+  /* 轻微的圆角 */
+  font-size: 10px;
+  text-transform: uppercase;
+  /* 文本大写 */
+  cursor: pointer;
+  /* 鼠标悬停时的指针样式 */
+  transition: background-color 0.3s;
+  /* 背景颜色变化的过渡效果 */
+}
+.button[data-v-04ce0a75]:hover {
+  background-color: #d32f2f;
+  /* 鼠标悬停时的背景颜色稍暗 */
+}
+.button[data-v-04ce0a75]:active {
+  background-color: #c62828;
+  /* 鼠标点击时的背景颜色更暗 */
+}
+.button[data-v-04ce0a75]:disabled {
+  background-color: #ef9a9a;
+  /* 禁用状态的按钮颜色更亮，更少饱和度 */
+  cursor: default;
+  /* 禁用状态的鼠标样式 */
+}
+.loading-indicator[data-v-04ce0a75] {
+  /* 添加你的样式，比如居中显示、动画等 */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  /* ...其他样式 */
+}
+.message[data-v-04ce0a75] {
+  position: absolute;
+  top: 50%;
+  /* 定位到父元素的中间 */
+  left: 50%;
+  /* 定位到父元素的中间 */
+  transform: translate(-50%, -50%);
+  /* 使用 transform 实现精确居中 */
+  padding: 10px;
+  background-color: white;
+  /* 设置背景颜色为白色 */
+  border: 1px solid blue;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* 添加阴影效果 */
+  text-align: center;
+  z-index: 100;
+  /* 确保提示信息在其他元素上方 */
+}
+.loader[data-v-04ce0a75] {
+  border: 5px solid #f3f3f3;
+  /* 浅灰色边框 */
+  border-top: 5px solid #3498db;
+  /* 蓝色边框 */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin-04ce0a75 2s linear infinite;
+  margin-bottom: 20px;
+}
+@keyframes spin-04ce0a75 {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}</style><!----></template></yd-image-ocr></body></html>
