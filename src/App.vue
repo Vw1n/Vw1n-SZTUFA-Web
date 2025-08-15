@@ -19,7 +19,7 @@ import Home from './components/Home.vue';
   width: 100vw;
   height: 100vh;
   /* 背景图片设置 */
-  background-image: url('/public/App_bg.jpg');
+  background-image: url('/App_bg.jpg');
   background-size: cover;
   /* 保持比例并覆盖整个元素 */
   background-position: center;
