@@ -2,7 +2,7 @@
     <div class="first_img">
         <!-- Logo 容器 -->
         <div class="logo">
-            <img src="/public/Home_logo.png" alt="SZTUFA Logo" />
+            <img src="/public/Home_logo.jpg" alt="SZTUFA Logo" />
         </div>
         <!-- 标题容器 -->
         <div class="title">
@@ -10,7 +10,7 @@
             <div class="title-orange">TO SZTUFA</div>
         </div>
         <!-- 背景图片 -->
-        <img src="/public/Home_bg.jpg" alt="背景图片" />
+        <img src="/Home_bg.jpg" alt="背景图片" />
     </div>
 </template>
 
