@@ -17,41 +17,33 @@
 <style scoped>
 .first_img {
     width: 93.75%;
-    height: calc(100vh - 61px);
-    /* 减去导航栏高度 */
+    height: calc(100vh - 122px); /* 调整高度，减去导航栏和新增边距的总和 */
     margin: 0 auto;
     text-align: center;
     border-radius: 20px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     position: relative;
-    /* 父容器设为相对定位，供子元素绝对定位 */
+    /* 添加上边距实现垂直居中，与底部导航保持平衡 */
+    margin-top: 61px; /* 与顶部导航栏高度一致，形成对称间距 */
 }
 
 /* Logo 样式调整 - 固定为120px×120px */
 .logo {
     position: absolute;
-    /* 绝对定位 */
     top: 5%;
-    /* 距离顶部 5% 位置，可根据需求调整 */
     left: 50%;
-    /* 水平居中基础 */
     transform: translateX(-50%);
-    /* 水平居中修正 */
     z-index: 10;
-    /* 确保在背景图上方 */
     width: 120px;
-    /* 固定宽度 */
     height: 120px;
-    /* 固定高度 */
 }
 
-/* Logo 图片样式 - 确保图片在120px×120px内正确显示 */
+/* Logo 图片样式 */
 .logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* 保持图片比例，完整显示在容器内 */
 }
 
 /* 背景图片样式 */
@@ -72,7 +64,6 @@
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 10;
-    /* 确保在背景图上方 */
 }
 
 .title-white,
@@ -107,12 +98,12 @@
 /* 大屏幕设备 */
 @media (min-width: 1200px) {
     .first_img {
-        height: 88%;
+        height: 80%; /* 调整高度适配大屏幕 */
+        margin-top: 80px; /* 增加上边距 */
     }
 
     .logo {
         top: 8%;
-        /* 大屏幕可适当提高 Logo 位置 */
     }
 }
 
@@ -121,6 +112,8 @@
     .first_img {
         width: 96%;
         border-radius: 15px;
+        margin-top: 50px; /* 适中的上边距 */
+        height: calc(100vh - 100px);
     }
 
     .logo {
@@ -140,9 +133,10 @@
 
     .first_img {
         width: 98%;
-        height: calc(100vh - 50px);
+        height: calc(100vh - 100px); /* 减去顶部导航和边距 */
         border-radius: 10px;
         box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
+        margin-top: 50px; /* 与手机导航栏高度匹配 */
     }
 
     .logo {
