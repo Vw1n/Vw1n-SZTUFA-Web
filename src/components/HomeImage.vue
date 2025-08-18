@@ -6,8 +6,12 @@
         </div>
         <!-- 标题容器 -->
         <div class="title">
-            <div class="title-white">WELCOME</div>
-            <div class="title-orange">TO SZTUFA</div>
+            <ClientOnly>
+                <BlurReveal :delay="0.2" :duration="0.75" class="p-8">
+                    <div class="title-white">WELCOME</div>
+                    <div class="title-orange">TO SZTUFA</div>
+                </BlurReveal>
+            </ClientOnly>
         </div>
         <!-- 背景图片 -->
         <img src="/Home_bg.jpg" alt="背景图片" />

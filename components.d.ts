@@ -9,6 +9,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Activity: typeof import('./src/components/Activity.vue')['default']
+    BlurReveal: typeof import('./src/components/ui/blur-reveal/BlurReveal.vue')['default']
     Community: typeof import('./src/components/Community.vue')['default']
     Dock: typeof import('./src/components/ui/dock/Dock.vue')['default']
     DockIcon: typeof import('./src/components/ui/dock/DockIcon.vue')['default']
