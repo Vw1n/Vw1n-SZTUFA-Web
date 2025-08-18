@@ -1,5 +1,5 @@
 <template>
-    <div class="top_nav">
+    <div class="top_nav" :class="{ 'scrolled': isScrolled }">
         <div class="navigation-content">
             <div class="top_nav_left">
                 SZTUFA
@@ -12,7 +12,7 @@
                     :class="{ 'clickable': true }"
                 >
             </div>
-            <div class="top_nav_middle">
+            <div class="top_nav_middle" :class="{ 'scrolled': isScrolled }">
                 因为热爱 一往无前
             </div>
             <div class="top_nav_right">
@@ -41,55 +41,62 @@
             class="image-overlay"
             @click="showEnlargedImage = false"
         >
-            <div class="enlarged-image-container" @click.stop>
-                <img 
-                    src="/xiaochengxu.png" 
-                    alt="小程序二维码" 
-                    class="enlarged-image"
-                >
-                <button class="close-btn" @click="showEnlargedImage = false">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
+            <img 
+                src="/xiaochengxu.png" 
+                alt="放大的小程序二维码" 
+                class="enlarged-img"
+            >
         </div>
     </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
-
-// 控制小程序图片是否放大显示
-const showEnlargedImage = ref(false);
-
-// 个人中心图片点击事件
-const handlePersonClick = () => {
-    // 这里可以添加个人中心的点击逻辑
-    console.log('个人中心图片被点击');
-    // 例如: 导航到个人中心页面
-    // router.push('/profile');
-};
-
-// 搜索图片点击事件
-const handleSearchClick = () => {
-    // 这里可以添加搜索的点击逻辑
-    console.log('搜索图片被点击');
-    // 例如: 打开搜索框
-    // openSearchModal();
+<script>
+export default {
+    data() {
+        return {
+            showEnlargedImage: false,
+            isScrolled: false,
+            scrollPosition: 0
+        };
+    },
+    methods: {
+        handlePersonClick() {
+            // 个人中心点击事件处理
+            console.log('点击了个人中心');
+        },
+        handleSearchClick() {
+            // 搜索点击事件处理
+            console.log('点击了搜索');
+        },
+        handleScroll() {
+            // 监听滚动事件
+            this.scrollPosition = window.scrollY;
+            // 当滚动超过50px时，应用滚动样式
+            this.isScrolled = this.scrollPosition > 50;
+        }
+    },
+    mounted() {
+        // 初始化时检查一次滚动位置
+        this.handleScroll();
+        // 挂载时添加滚动监听
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeUnmount() {
+        // 卸载时移除滚动监听
+        window.removeEventListener('scroll', this.handleScroll);
+    }
 };
 </script>
 
 <style scoped>
 .top_nav {
-    width: 100%;
-    height: 61px;
-    /* 可以添加导航栏背景色以便在各种背景下可见 */
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    position: fixed; /* 固定在顶部 */
+    transition: all 0.3s ease;
+    position: fixed;
     top: 0;
     left: 0;
-    z-index: 998; /* 确保在内容之上，但低于底部导航 */
-    background-color: rgba(0, 0, 0, 0.3); /* 半透明背景，增加层次感 */
-    backdrop-filter: blur(5px); /* 毛玻璃效果，更现代 */
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
 }
 
 .navigation-content {
@@ -98,50 +105,79 @@ const handleSearchClick = () => {
     align-items: center;
     padding: 0 20px;
     height: 61px;
-    font-family: 'YouSheBiaoTiHei';
-    font-size: 1.25rem;
-    font-weight: 400;
-    line-height: 1.63rem;
-    letter-spacing: 0rem;
-    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s ease;
+    color: #fff; /* 默认文字颜色为白色 */
 }
 
-/* 图片样式 */
-.icon-img, .xiaochengxu-img {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    transition: transform 0.2s ease;
-    filter: brightness(0) invert(1); /* 确保在深色背景上可见 */
-}
-
-/* 可点击样式 */
-.clickable {
-    cursor: pointer;
-}
-
-.clickable:hover {
-    transform: scale(1.1);
-}
-
-/* 左侧图片 - SZTUFA右侧 */
+/* 左侧区域样式 */
 .top_nav_left {
     display: flex;
     align-items: center;
-    gap: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-/* 右侧图片 - 联系我们左侧 */
-.top_nav_right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.xiaochengxu-img {
+    width: 28px;
+    height: 28px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 /* 中间文字样式 */
 .top_nav_middle {
-    font-size: 1rem;
-    opacity: 0.9;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+/* 右侧区域样式 */
+.top_nav_right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* 滚动后的样式 */
+.top_nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+}
+
+/* 滚动后导航内容样式变化 */
+.top_nav.scrolled .navigation-content {
+    height: 50px;
+    color: rgba(78, 99, 142, 1); /* 文字颜色变为深色 */
+}
+
+/* 滚动后图标样式变化 - 上移缩小 */
+.top_nav.scrolled .icon-img,
+.top_nav.scrolled .xiaochengxu-img {
+    width: 20px;
+    height: 20px;
+    transform: translateY(-3px);
+}
+
+/* 中间文字滚动后的样式 - 上移缩小 */
+.top_nav_middle.scrolled {
+    font-size: 0.9rem;
+    transform: translateY(-3px);
+}
+
+/* 点击效果样式 */
+.clickable {
+    transition: transform 0.2s ease;
+}
+
+.clickable:active {
+    transform: scale(0.9);
 }
 
 /* 图片放大弹窗样式 */
@@ -155,83 +191,46 @@ const handleSearchClick = () => {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
-    animation: fadeIn 0.3s ease;
+    z-index: 1000;
 }
 
-.enlarged-image-container {
-    position: relative;
-    padding: 20px;
-}
-
-.enlarged-image {
-    max-width: 80%;
-    max-height: 80vh;
+.enlarged-img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
     border: 4px solid white;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    animation: zoomIn 0.3s ease;
 }
 
-.close-btn {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ff3b30;
-    color: white;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease;
-}
-
-.close-btn:hover {
-    transform: scale(1.1);
-}
-
-/* 动画效果 */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes zoomIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-/* 字体引入 */
-@font-face {
-    font-family: 'YouSheBiaoTiHei';
-    src: url('..//assets/YouSheBiaoTiHei.ttf');
-    font-display: swap;
-}
-
-/* 响应式调整 */
+/* 响应式适配 */
 @media (max-width: 768px) {
+    .navigation-content {
+        padding: 0 15px;
+    }
+    
+    .top_nav_left {
+        font-size: 1rem;
+    }
+    
+    .top_nav_middle {
+        font-size: 1rem;
+    }
+    
+    .top_nav_right {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .icon-img, .xiaochengxu-img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
     .top_nav_middle {
         display: none; /* 小屏幕隐藏中间文字 */
     }
-    
-    .navigation-content {
-        justify-content: space-around;
-    }
-
-    /* 小屏幕调整图片大小 */
-    .icon-img, .xiaochengxu-img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .enlarged-image {
-        max-width: 90%;
-    }
 }
 </style>
+    
