@@ -3,21 +3,22 @@
     ref="dockRef"
     :class="
       cn(
-        'supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 mx-auto mt-8 flex h-[58px] w-max rounded-2xl border p-2 backdrop-blur-md transition-all gap-4',
-        orientation === 'vertical' && 'flex-col w-[58px] h-max',
-        props.class,
+        'bg-white mx-auto mt-8 flex h-auto w-max rounded-[9999px] border transition-all gap-[38px]',
+        orientation === 'vertical' && 'flex-col w-[auto] h-max',
         dockClass,
+        props.class
       )
     "
     @mousemove="onMouseMove"
     @mouseleave="onMouseLeave"
+    :style="computedStyles"
   >
     <slot />
   </div>
 </template>
 
 <script setup>
-import { ref, computed, provide } from "vue";
+import { ref, computed, provide, onMounted } from "vue";
 import { cn } from "@/lib/utils";
 import {
   MOUSE_X_INJECTION_KEY,
@@ -38,6 +39,23 @@ const props = defineProps({
 const dockRef = ref(null);
 const mouseX = ref(Infinity);
 const mouseY = ref(Infinity);
+
+// 计算样式 - 使用行内样式确保内边距生效
+const computedStyles = computed(() => ({
+  boxSizing: 'border-box',
+  paddingLeft: '42px',
+  paddingRight: '42px',
+  paddingTop: '21px',
+  paddingBottom: '21px',
+  // 垂直布局时交换内边距
+  ...(props.orientation === 'vertical' && {
+    paddingLeft: '21px',
+    paddingRight: '21px',
+    paddingTop: '42px',
+    paddingBottom: '42px',
+  })
+}));
+
 const magnification = computed(() => props.magnification);
 const distance = computed(() => props.distance);
 
@@ -46,6 +64,26 @@ const dockClass = computed(() => ({
   "items-center": props.direction === "middle",
   "items-end": props.direction === "bottom",
 }));
+
+// 强制应用样式的备选方案
+onMounted(() => {
+  if (dockRef.value) {
+    // 双重保障：直接操作DOM设置样式
+    const el = dockRef.value;
+    el.style.boxSizing = 'border-box';
+    el.style.paddingLeft = '42px';
+    el.style.paddingRight = '42px';
+    el.style.paddingTop = '21px';
+    el.style.paddingBottom = '21px';
+    
+    if (props.orientation === 'vertical') {
+      el.style.paddingLeft = '21px';
+      el.style.paddingRight = '21px';
+      el.style.paddingTop = '42px';
+      el.style.paddingBottom = '42px';
+    }
+  }
+});
 
 function onMouseMove(e) {
   requestAnimationFrame(() => {
