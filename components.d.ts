@@ -20,11 +20,13 @@ declare module 'vue' {
     ImageScroll: typeof import('./src/components/ImageScroll.vue')['default']
     Marquee: typeof import('./src/components/ui/marquee/Marquee.vue')['default']
     Match: typeof import('./src/components/Match.vue')['default']
+    MatchCalendar: typeof import('./src/components/MatchCalendar.vue')['default']
     Navigation: typeof import('./src/components/Navigation.vue')['default']
     ReviewCard: typeof import('./src/components/ui/marquee/ReviewCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SchoolTeam: typeof import('./src/components/SchoolTeam.vue')['default']
+    SidebarNav: typeof import('./src/components/SidebarNav.vue')['default']
     TopNav: typeof import('./src/components/TopNav.vue')['default']
   }
 }
