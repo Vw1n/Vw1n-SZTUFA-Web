@@ -1,20 +1,46 @@
 <template>
     <div class="first_img">
         <!-- Logo 容器 -->
+        <!--
         <div class="logo">
             <img src="/Home_logo.png" alt="SZTUFA Logo" />
         </div>
+        -->
         <!-- 标题容器 -->
         <div class="title">
             <ClientOnly>
                 <BlurReveal :delay="0.2" :duration="0.75" class="p-8">
-                    <div class="title-white">WELCOME</div>
-                    <div class="title-orange">TO SZTUFA</div>
+                    <div class="title-white">WELCOME TO</div>
+                    <div class="title-orange">SZTUFA</div>
                 </BlurReveal>
             </ClientOnly>
         </div>
         <!-- 背景图片 -->
+        <!--
         <img src="/Home_bg.jpg" alt="背景图片" />
+        -->
+
+        <!--球队队标-->
+        <div class="team-icon">
+            <div class="teams-icon">
+                <img src="/zd.png" alt="中德队徽">
+            </div>
+            <div class="teams-icon">
+                <img src="/jt.png" alt="交物队徽">
+            </div>
+            <div class="teams-icon">
+                <img src="/gw.png" alt="工物队徽">
+            </div>
+            <div class="teams-icon">
+                <img src="/jk.png" alt="健康队徽">
+            </div>
+            <div class="teams-icon">
+                <img src="/xny.png" alt="新材能队徽">
+            </div>
+            <div class="teams-icon">
+                <img src="/dsj.png" alt="大数据队徽">
+            </div>
+        </div>
     </div>
 </template>
 
@@ -25,7 +51,9 @@
     margin: 0 auto;
     text-align: center;
     border-radius: 20px;
+    /*
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    */
     overflow: hidden;
     position: relative;
     /* 添加上边距实现垂直居中，与底部导航保持平衡 */
@@ -59,11 +87,15 @@
 }
 
 .title {
+    width: 1200px;
+    height: 481px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     position: absolute;
-    top: 50%;
+    padding: 20px 0px 20px 0px;
+    top:169px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -72,25 +104,58 @@
 
 .title-white,
 .title-orange {
+    width: 1200px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
     font-family: 'Noto Sans Bengali ExtraCondensed';
+    font-size: 240px;
     font-weight: 400;
-    line-height: 1.2;
     text-align: center;
 }
 
 .title-white {
     color: rgba(255, 255, 255, 1);
+    line-height: 400px;
+    letter-spacing: 0px;
+    margin-bottom: 80px;
 }
 
 .title-orange {
     color: rgba(255, 101, 32, 1);
+    line-height: 318px;
     letter-spacing: -2px;
 }
 
 /* 默认字体大小 - 适用于中等屏幕 */
+/*
 .title-white,
 .title-orange {
     font-size: clamp(5rem, 15vw, 10.625rem);
+}
+*/
+
+.team-icon{
+    width: 1200px;
+    height: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top:calc(199px + 300px);
+}
+
+.teams-icon
+{
+    width: 128px;
+    height: 128px;
+    display: flex;
+    opacity: 0.5;
 }
 
 @font-face {

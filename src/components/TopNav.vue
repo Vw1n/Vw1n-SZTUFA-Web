@@ -2,21 +2,22 @@
     <div class="top_nav" :class="{ 'scrolled': isScrolled }">
         <div class="navigation-content">
             <div class="top_nav_left">
-                SZTUFA
-                <!-- 小程序图片 - 点击放大 -->
+                <!-- 足协徽章 - 点击放大 -->
                 <img 
-                    src="/xiaochengxu.png" 
-                    alt="小程序二维码" 
-                    class="xiaochengxu-img"
+                    src="/Home_logo.png" 
+                    alt="足协徽章" 
+                    class="Home_logo-img"
                     @click="showEnlargedImage = true"
                     :class="{ 'clickable': true }"
                 >
+                SZTUFA
             </div>
             <div class="top_nav_middle" :class="{ 'scrolled': isScrolled }">
                 因为热爱 一往无前
             </div>
             <div class="top_nav_right">
                 <!-- 个人中心图片 - 仅点击效果 -->
+                <!--
                 <img 
                     src="/person.png" 
                     alt="个人中心" 
@@ -24,7 +25,9 @@
                     @click="handlePersonClick"
                     :class="{ 'clickable': true }"
                 >
+                -->
                 <!-- 搜索图片 - 仅点击效果 -->
+                <!--
                 <img 
                     src="/search.png" 
                     alt="搜索" 
@@ -32,6 +35,7 @@
                     @click="handleSearchClick"
                     :class="{ 'clickable': true }"
                 >
+                -->
                 联系我们
             </div>
         </div>
@@ -90,10 +94,14 @@ export default {
 
 <style scoped>
 .top_nav {
+    display: flex;
+    flex-direction: row;
     transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 40px;
+    left: 0px;
     width: 100%;
     z-index: 999;
     background-color: transparent;
@@ -103,23 +111,31 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    height: 61px;
+    left: 241px;
+    width: 1488px;
+    height: 47px;
     transition: all 0.3s ease;
     color: #fff; /* 默认文字颜色为白色 */
 }
 
 /* 左侧区域样式 */
 .top_nav_left {
+    width: 160px;
+    height: 47px;
     display: flex;
+    color: rgba(255, 255, 255, 1);
+    font-family: YouSheBiaoTiHei;
     align-items: center;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
 }
 
-.xiaochengxu-img {
-    width: 28px;
-    height: 28px;
+.Home_logo-img {
+    width: 60px;
+    height: 60px;
     margin-left: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -127,7 +143,15 @@ export default {
 
 /* 中间文字样式 */
 .top_nav_middle {
-    font-size: 1.1rem;
+    width: 287px;
+    height: 47px;
+    color:rgba(255,101,32,1);
+    font-family: YouSheBiaoTiHei;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
     transition: all 0.3s ease;
 }
 
@@ -135,7 +159,15 @@ export default {
 .top_nav_right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    width: 133px;
+    height: 47px;
+    color: rgba(255, 255, 255, 1);
+    font-family: YouSheBiaoTiHei;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
 }
 
 .icon-img {
