@@ -1,19 +1,11 @@
 <template>
     <div class="first_img">
         <!-- Logo 容器 -->
-<<<<<<< HEAD
-=======
-
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
         <!--
         <div class="logo">
             <img src="/Home_logo.png" alt="SZTUFA Logo" />
         </div>
         -->
-<<<<<<< HEAD
-=======
-
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
         <!-- 标题容器 -->
         <div class="title">
             <ClientOnly>
@@ -24,10 +16,6 @@
             </ClientOnly>
         </div>
         <!-- 背景图片 -->
-<<<<<<< HEAD
-=======
-
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
         <!--
         <img src="/Home_bg.jpg" alt="背景图片" />
         -->
@@ -35,7 +23,6 @@
         <!--球队队标-->
         <div class="team-icon">
             <div class="teams-icon">
-<<<<<<< HEAD
                 <img src="/zd.png" alt="中德队徽">
             </div>
             <div class="teams-icon">
@@ -54,27 +41,6 @@
                 <img src="/dsj.png" alt="大数据队徽">
             </div>
         </div>
-=======
-                <img src="C:\Users\Hoklam\Desktop\SZTUFA-Web\Vw1n-SZTUFA-Web\docs\zd.png" alt="中德队徽">
-            </div>
-            <div class="teams-icon">
-                <img src="C:\Users\Hoklam\Desktop\SZTUFA-Web\Vw1n-SZTUFA-Web\docs\jt.png" alt="交物队徽">
-            </div>
-            <div class="teams-icon">
-                <img src="C:\Users\Hoklam\Desktop\SZTUFA-Web\Vw1n-SZTUFA-Web\docs\gw.png" alt="工物队徽">
-            </div>
-            <div class="teams-icon">
-                <img src="C:\Users\Hoklam\Desktop\SZTUFA-Web\Vw1n-SZTUFA-Web\docs\jk.png" alt="健康队徽">
-            </div>
-            <div class="teams-icon">
-                <img src="C:\Users\Hoklam\Desktop\SZTUFA-Web\Vw1n-SZTUFA-Web\docs\xny.png" alt="新材能队徽">
-            </div>
-            <div class="teams-icon">
-                <img src="C:\Users\Hoklam\Desktop\SZTUFA-Web\Vw1n-SZTUFA-Web\docs\dsj.png" alt="大数据队徽">
-            </div>
-        </div>
-        
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
     </div>
 </template>
 
@@ -87,17 +53,9 @@
     margin: 0 auto;
     text-align: center;
     border-radius: 20px;
-<<<<<<< HEAD
     /*
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     */
-=======
-
-    /*
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    */
-
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
     overflow: hidden;
     
     position: relative;
@@ -135,36 +93,10 @@
 .title {
     width: 1200px;
     height: 481px;
-<<<<<<< HEAD
-=======
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    
-    padding: 20px 0px 20px 0px;
-    top:169px;
-    left: 50%;
-    
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
-    z-index: 10;
-   
-}
- 
-.title-white,
-.title-orange {
-    width: 1200px;
-    height: 180px;
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-<<<<<<< HEAD
     position: absolute;
     padding: 20px 0px 20px 0px;
     top:169px;
@@ -181,16 +113,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-=======
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
     padding: 20px 0px 20px 0px;
     font-family: 'Noto Sans Bengali ExtraCondensed';
     font-size: 240px;
     font-weight: 400;
-<<<<<<< HEAD
-=======
-    
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
     text-align: center;
 }
 
@@ -215,10 +141,6 @@
     font-size: clamp(5rem, 15vw, 10.625rem);
 }
 */
-<<<<<<< HEAD
-
-=======
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
 .team-icon{
     width: 1200px;
     height: 135px;

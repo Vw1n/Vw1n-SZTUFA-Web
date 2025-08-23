@@ -2,10 +2,6 @@
     <div class="top_nav" :class="{ 'scrolled': isScrolled }">
         <div class="navigation-content">
             <div class="top_nav_left">
-<<<<<<< HEAD
-=======
-                
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
                 <!-- 足协徽章 - 点击放大 -->
                 <img 
                     src="/Home_logo.png" 
@@ -42,10 +38,6 @@
                     :class="{ 'clickable': true }"
                 >
                 -->
-<<<<<<< HEAD
-=======
-                
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
                 联系我们
             </div>
         </div>
@@ -109,10 +101,6 @@ export default {
     transition: all 0.3s ease;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-=======
-    
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
     position: fixed;
     top: 40px;
     left: 0px;
@@ -127,15 +115,8 @@ export default {
     justify-content: space-between;
     align-items: center;
     left: 241px;
-<<<<<<< HEAD
     width: 1488px;
     height: 47px;
-=======
-    
-    width:1488px ;
-    height: 47px;
-    
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
     transition: all 0.3s ease;
     color: #fff; /* 默认文字颜色为白色 */
 }
@@ -156,10 +137,6 @@ export default {
 }
 
 .Home_logo-img {
-<<<<<<< HEAD
-=======
-    
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
     width: 60px;
     height: 60px;
     margin-left: 15px;
@@ -171,10 +148,6 @@ export default {
 .top_nav_middle {
     width: 287px;
     height: 47px;
-<<<<<<< HEAD
-=======
-    
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
     color:rgba(255,101,32,1);
     font-family: YouSheBiaoTiHei;
     font-size: 36px;
@@ -189,10 +162,6 @@ export default {
 .top_nav_right {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
-=======
-    
->>>>>>> acf9ffa (fix(TopNav HomeImage):头部栏字体样式修改；修改首页图片，首页添加各院队队徽)
     width: 133px;
     height: 47px;
     color: rgba(255, 255, 255, 1);
