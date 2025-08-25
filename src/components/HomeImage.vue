@@ -1,12 +1,5 @@
 <template>
     <div class="first_img">
-        <!-- Logo 容器 -->
-        <!--
-        <div class="logo">
-            <img src="/Home_logo.png" alt="SZTUFA Logo" />
-        </div>
-        -->
-        <!-- 标题容器 -->
         <div class="title">
             <ClientOnly>
                 <BlurReveal :delay="0.2" :duration="0.75" class="p-8">
@@ -15,10 +8,6 @@
                 </BlurReveal>
             </ClientOnly>
         </div>
-        <!-- 背景图片 -->
-        <!--
-        <img src="/Home_bg.jpg" alt="背景图片" />
-        -->
 
         <!--球队队标-->
         <div class="team-icon">
@@ -49,18 +38,12 @@
 
 .first_img {
     width: 93.75%;
-    height: calc(100vh - 122px); /* 调整高度，减去导航栏和新增边距的总和 */
     margin: 0 auto;
     text-align: center;
     border-radius: 20px;
-    /*
-    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    */
     overflow: hidden;
-    
     position: relative;
-    /* 添加上边距实现垂直居中，与底部导航保持平衡 */
-    margin-top: 61px; /* 与顶部导航栏高度一致，形成对称间距 */
+    margin-top: 194px;
 }
 
 
@@ -172,7 +155,7 @@
 @media (min-width: 1200px) {
     .first_img {
         height: 80%; /* 调整高度适配大屏幕 */
-        margin-top: 80px; /* 增加上边距 */
+        margin-top: 194px; /* 增加上边距 */
     }
 
     .logo {

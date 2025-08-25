@@ -28,14 +28,12 @@
 .top_nav {
     display: flex;
     flex-direction: row;
-    transition: all 0.3s ease;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 40px;
+    top: 28px;
     left: 0px;
     width: 100%;
-    
     z-index: 999;
     background-color: transparent;
 }
