@@ -70,7 +70,7 @@ const ImageSrc = [
 
 @font-face {
     font-family: 'YouSheBiaoTiHei';
-    src: url('../assets/YouSheBiaoTiHei.ttf'); /* 修复路径错误 */
+    src: url('../assets/YouSheBiaoTiHei.ttf');
     font-display: swap;
 }
 
